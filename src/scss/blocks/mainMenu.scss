@@ -1,7 +1,28 @@
 @use "../base/variables.scss" as *;
 
 .main-menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+
 	&__title {
 		font-size: 16px;
+	}
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__btn {
+		font-size: 24px;
+		text-transform: uppercase;
+		color: $text-color;
+		border: none;
+		background-color: transparent;
+		text-align: left;
+		cursor: pointer;
 	}
 }
