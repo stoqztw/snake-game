@@ -12,5 +12,8 @@
     "postcss-pxtorem": "^6.1.0",
     "sass-embedded": "^1.105.2",
     "vite": "^8.3.4"
+  },
+  "dependencies": {
+    "modern-normalize": "^3.0.1"
   }
 }
