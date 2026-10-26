@@ -1,6 +1,7 @@
 "use strict";
 
 import { pasteTitleInMainMenu } from "./pasteTitle";
+import { renderGamePage } from "./renderGamePage";
 import { titles } from "./titlesList";
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -15,7 +16,7 @@ window.addEventListener("DOMContentLoaded", () => {
 		const target = e.target;
 
 		if (target && target.matches("[data-start]")) {
-			console.log(1);
+			renderGamePage();
 		}
 	});
 });
