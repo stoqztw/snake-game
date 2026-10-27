@@ -5,9 +5,6 @@ import { renderGamePage } from "./renderGamePage";
 import { titles } from "./titlesList";
 
 window.addEventListener("DOMContentLoaded", () => {
-	// const intervalId = setInterval(() => {
-	// 	pasteTitleInMainMenu(titles, "main-menu__title");
-	// }, 3000);
 	const mainMenuContainer = document.querySelector(".main-menu__container");
 
 	pasteTitleInMainMenu(titles, "main-menu__title");
