@@ -24,11 +24,23 @@
 	}
 
 	&__container {
+		padding: 20px;
 		display: flex;
 		flex-direction: column;
+		min-width: 450px;
+		border: 2px solid $text-color;
+		border-radius: 6px;
+
+		&-legend {
+			padding: 0px 10px;
+			font-size: 18px;
+			text-align: center;
+		}
 	}
 
 	&__btn {
+		padding: 0px 6px;
+		position: relative;
 		font-size: 24px;
 		text-transform: uppercase;
 		color: $text-color;
@@ -36,5 +48,27 @@
 		background-color: transparent;
 		text-align: left;
 		cursor: pointer;
+
+		&::before {
+			content: "➜ ";
+			// position: absolute;
+			// top: 0;
+			// left: -30px;
+		}
+	}
+
+	&__btn_active {
+		color: $background-color;
+		background-color: $text-color;
+	}
+
+	&__best-records {
+		margin-top: 16px;
+	}
+
+	&__clue {
+		margin-top: 28px;
+		text-align: center;
+		opacity: 50%;
 	}
 }

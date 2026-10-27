@@ -31,12 +31,16 @@
 	<body>
 		<section class="main-menu">
 			<h1 class="main-menu__title"><pre></pre></h1>
-			<h2 class="main-menu__subtitle"> - press any key - </h2>
-			<div class="main-menu__container hide">
-				<button data-start class="main-menu__btn">play</button>
+			<h2 class="main-menu__subtitle">- press any key -</h2>
+			<fieldset class="main-menu__container hide">
+				<legend class="main-menu__container-legend">Main menu</legend>
+				<button data-start class="main-menu__btn main-menu__btn_active">
+					play
+				</button>
 				<button data-settings class="main-menu__btn">settings</button>
-				<p class="main-menu__best-records">best 0</p>
-			</div>
+				<p class="main-menu__best-records">Best: 000</p>
+				<p class="main-menu__clue">↑↓ move · enter select</p>
+			</fieldset>
 		</section>
 		<script type="module" src="./src/js/main.js"></script>
 	</body>
