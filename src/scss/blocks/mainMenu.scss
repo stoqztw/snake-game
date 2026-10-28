@@ -1,5 +1,5 @@
 @use "../base/variables.scss" as *;
-@use "../animations/_blink.scss" as *;
+@use "../animations/blink.scss" as *;
 
 .main-menu {
 	display: flex;
@@ -41,7 +41,7 @@
 	&__btn {
 		padding: 0px 6px;
 		position: relative;
-		font-size: 24px;
+		font-size: 20px;
 		text-transform: uppercase;
 		color: $text-color;
 		border: none;

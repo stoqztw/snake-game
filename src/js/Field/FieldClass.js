@@ -1,5 +1,5 @@
 export class Field {
-	constructor(size) {
+	constructor(sizeX, sizeY) {
 		this.size = size;
 	}
 }

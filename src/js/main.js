@@ -1,12 +1,15 @@
 "use strict";
 
+import { hideSubtitleAndRenderMainMenu } from "./MainMenu/renderMainMenu";
+import { selectButtons } from "./MainMenu/selectButton";
 import { pasteTitleInMainMenu } from "./pasteTitle";
 import { renderGamePage } from "./renderGamePage";
 import { titles } from "./titlesList";
-import { hideSubtitleAndRenderMainMenu } from "./Utils/renderMainMenu";
 
 window.addEventListener("DOMContentLoaded", () => {
 	const mainMenuContainer = document.querySelector(".main-menu__container");
+	const listButtonsInMainMenu =
+		mainMenuContainer.querySelectorAll(".main-menu__btn");
 	const subtitle = document.querySelector(".main-menu__subtitle");
 
 	window.addEventListener(
@@ -25,6 +28,8 @@ window.addEventListener("DOMContentLoaded", () => {
 		{ once: true },
 	);
 
+	selectButtons(listButtonsInMainMenu, "main-menu__btn_active");
+
 	pasteTitleInMainMenu(titles, "main-menu__title");
 
 	mainMenuContainer.addEventListener("click", (e) => {
@@ -32,6 +37,10 @@ window.addEventListener("DOMContentLoaded", () => {
 
 		if (target && target.matches("[data-start]")) {
 			renderGamePage();
+		}
+
+		if (target && target.matches("[data-settings]")) {
+			console.log(1);
 		}
 	});
 });
